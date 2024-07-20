@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Pesanan;
-use Auth;
+use App\Models\Kategori;
+use Illuminate\Support\Facades\Auth;
 
 class PesananController extends Controller
 {

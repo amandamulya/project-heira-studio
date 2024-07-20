@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\{Customer,User, Testimoni};
 use Illuminate\Http\Request;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class MemberController extends Controller
 {
@@ -60,7 +60,7 @@ class MemberController extends Controller
         if(!$request->password || $request->password === null){
             $pwd = $user->password;
         } else {
-            $pwd = bcrypt($pwd);
+            $pwd = bcrypt($request->password);
         }
 
         $simpanuser = User::where('id',$request->userid)->update([

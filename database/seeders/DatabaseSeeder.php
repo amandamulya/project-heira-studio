@@ -24,8 +24,8 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('P@55word'),
         ]);
         User::create([
-            'nama' => 'Kulum Fatmawati',
-            'email' => 'lulu@gmail.com',
+            'nama' => 'Amanda Mulyasari',
+            'email' => 'amanda@gmail.com',
             'role' => '2',
             'status' => 0,
             'hp' => '081234567893',
